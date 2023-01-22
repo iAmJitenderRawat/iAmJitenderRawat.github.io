@@ -49,7 +49,7 @@ export const Navbar = () => {
         </TabList>
       </Tabs>
       <a
-        href="https://drive.google.com/file/d/1RocveE7ppf6znfnlpFdITyRYjN76hu81/view?usp=sharing"
+        href="https://github.com/iAmJitenderRawat/resume-pdf/blob/main/Jitender_Rawat_Resume.pdf"
         target="_blank"
       >
         <Button leftIcon={<DownloadIcon />} bg={"blue.600"}>

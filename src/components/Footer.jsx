@@ -95,7 +95,7 @@ export function Footer() {
           <Stack align={"flex-start"}>
             <ListHeader>Download Resume From Here</ListHeader>
             <a
-              href="https://drive.google.com/file/d/1RocveE7ppf6znfnlpFdITyRYjN76hu81/view?usp=sharing"
+              href="https://github.com/iAmJitenderRawat/resume-pdf/blob/main/Jitender_Rawat_Resume.pdf"
               target="_blank"
             >
               <Button
