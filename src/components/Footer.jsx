@@ -95,14 +95,15 @@ export function Footer() {
           <Stack align={"flex-start"}>
             <ListHeader>Download Resume From Here</ListHeader>
             <a
-              href="https://github.com/iAmJitenderRawat/resume-pdf/blob/main/Jitender_Rawat_Resume.pdf"
+              href="https://github.com/iAmJitenderRawat/resume-pdf/raw/main/Jitender_Rawat_Resume.pdf"
               target="_blank"
             >
               <Button
-                bg={useColorModeValue("green.400", "green.800")}
-                color={useColorModeValue("white", "gray.800")}
+                bg={useColorModeValue("green.800", "green.400")}
+                color={useColorModeValue("white", "white")}
                 _hover={{
                   bg: "green.600",
+                  color: "gray.800",
                 }}
                 aria-label="Download"
                 leftIcon={<DownloadIcon />}

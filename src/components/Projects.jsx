@@ -7,7 +7,7 @@ export const Projects = () => {
   const bg = useColorModeValue("gray.800", "white");
   const color = useColorModeValue("white", "black");
   return (
-    <Box className="p-15" id="projects">
+    <Box px={{md:"15%",sm:"10%", base:5}} id="projects">
       <Heading className="center ptb-10">Project Section</Heading>
       <Grid templateColumns={"repeat(1, 1fr)"} gap={12}>
         <GridItem className="card">

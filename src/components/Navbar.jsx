@@ -56,8 +56,8 @@ export const Navbar = () => {
           Resume
         </Button>
       </a>
-      <Button bg={"Background"} onClick={toggleColorMode}>
-        {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+      <Button bg={"white"} color={"Background"} onClick={toggleColorMode}>
+        {colorMode === "light" ? <MoonIcon color={"black"} /> : <SunIcon />}
       </Button>
     </Flex>
   );

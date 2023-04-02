@@ -84,6 +84,7 @@
   border-radius: 10px;
   border: 1px solid beige;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 1s;
 }
 .m-10 {
   margin: 10px;
@@ -92,12 +93,15 @@
   width: 80%;
   padding: 1%;
   margin: auto;
+  transition: transform 1s;
 }
 .stats:hover {
   transform: scale(1.2);
+  transition: transform 1s;
 }
 .card:hover {
   transform: scale(1.1);
+  transition: transform 1s;
 }
 .burlywood {
   color: burlywood;
