@@ -99,7 +99,7 @@ export function Footer() {
               target="_blank"
             >
               <Button
-                bg={useColorModeValue("green.800", "green.400")}
+                bg={useColorModeValue("green.400", "green.400")}
                 color={useColorModeValue("white", "white")}
                 _hover={{
                   bg: "green.600",
