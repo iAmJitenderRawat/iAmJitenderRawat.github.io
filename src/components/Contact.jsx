@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Box, Flex, Heading, Image, useToast } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, useToast } from "@chakra-ui/react";
 
 export const Contact = () => {
   const form = useRef();
@@ -48,7 +48,7 @@ export const Contact = () => {
         </Box>
         <Box
           id="form"
-          w={{ xl: "40%", lg: "45%", md: "85%", sm: "95%", base: "98%" }}
+          w={{ xl: "40%", lg: "45%", md: "85%", sm: "95%", base: "99%" }}
           m={"auto"}
         >
           <form ref={form} onSubmit={sendEmail}>

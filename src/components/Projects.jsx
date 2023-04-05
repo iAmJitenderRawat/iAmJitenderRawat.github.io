@@ -1,16 +1,24 @@
 import { ViewIcon } from "@chakra-ui/icons";
 import { Grid, Heading, Box, Image, GridItem, Text, Flex, Button, Divider, useColorModeValue } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Projects = () => {
   const bg = useColorModeValue("gray.800", "white");
   const color = useColorModeValue("white", "black");
+      useEffect(() => {
+        AOS.init({
+          // offset:500,
+          duration:6000,
+        });
+      }, []);
   return (
-    <Box px={{md:"15%",sm:"10%", base:5}} id="projects">
+    <Box px={{ md: "15%", sm: "10%", base: 5 }} id="projects">
       <Heading className="center ptb-10">Project Section</Heading>
       <Grid templateColumns={"repeat(1, 1fr)"} gap={12}>
-        <GridItem className="card">
+        <GridItem className="card" data-aos={"fade-left"}>
           <Box>
             <Image src="../Images/roll-the-dice.png" alt="calculator" />
           </Box>
@@ -50,7 +58,7 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem className="card" data-aos="fade-right">
           <Box>
             <Image
               className="project"
@@ -98,7 +106,7 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem className="card" data-aos={"fade-left"}>
           <Box>
             <Image
               className="project"
@@ -146,7 +154,10 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem
+          className="card"
+          data-aos={"fade-right"}
+        >
           <Box>
             <Image
               className="project"
@@ -194,7 +205,7 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem className="card" data-aos={"fade-left"}>
           <Box>
             <Image
               className="project"
@@ -242,7 +253,10 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem
+          className="card"
+          data-aos={"fade-right"}
+        >
           <Box>
             <Image
               className="project"
@@ -290,7 +304,7 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem className="card" data-aos={"fade-left"}>
           <Box>
             <Image
               className="project"
@@ -337,7 +351,10 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem
+          className="card"
+          data-aos={"fade-right"}
+        >
           <Box>
             <Image
               className="project"
@@ -387,7 +404,7 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem className="card" data-aos={"fade-left"}>
           <Box>
             <Image
               className="project"
@@ -437,7 +454,10 @@ export const Projects = () => {
             </Flex>
           </Box>
         </GridItem>
-        <GridItem className="card">
+        <GridItem
+          className="card"
+          data-aos={"fade-right"}
+        >
           <Box>
             <Image
               className="project"

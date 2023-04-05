@@ -24,12 +24,12 @@ export const Home = () => {
       flexDir={{ lg: "row", md: "column", sm: "column", base: "column" }}
     >
       <VStack m={5}>
-        <Image
+        <Image className="slide-right"
           src={"https://avatars.githubusercontent.com/u/107478598?v=4"}
           borderRadius={"50%"}
         />
       </VStack>
-      <VStack
+      <VStack className="slide-left"
         align={{
           lg: "flex-start",
           md: "center",
@@ -40,7 +40,14 @@ export const Home = () => {
       >
         <Heading
           as="h1"
-          fontSize={{"2xl":"7xl", xl: "6xl", lg: "5xl", md: "4xl", sm: "3xl", base: "2xl" }}
+          fontSize={{
+            "2xl": "7xl",
+            xl: "6xl",
+            lg: "5xl",
+            md: "4xl",
+            sm: "3xl",
+            base: "2xl",
+          }}
         >
           Hi, I'm
           <Text
