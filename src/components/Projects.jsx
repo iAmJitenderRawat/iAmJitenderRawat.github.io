@@ -1,19 +1,12 @@
 import { ViewIcon } from "@chakra-ui/icons";
 import { Grid, Heading, Box, Image, GridItem, Text, Flex, Button, Divider, useColorModeValue } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React from "react";
 import { BsGithub } from "react-icons/bs";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export const Projects = () => {
   const bg = useColorModeValue("gray.800", "white");
   const color = useColorModeValue("white", "black");
-      useEffect(() => {
-        AOS.init({
-          // offset:500,
-          duration:6000,
-        });
-      }, []);
+
   return (
     <Box px={{ md: "15%", sm: "10%", base: 5 }} id="projects">
       <Heading className="center ptb-10">Project Section</Heading>

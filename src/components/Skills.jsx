@@ -1,15 +1,8 @@
 import { Grid, GridItem, Heading, Image } from '@chakra-ui/react';
-import React, { useEffect } from 'react'
-import AOS from 'aos';
-import "aos/dist/aos.css"
+import React from 'react'
 
 export const Skills = () => {
-  useEffect(()=>{
-    AOS.init({
-      offset:200,
-      duration:5000,
-    })
-  },[])
+
   return (
     <div className="center p-15" id="skills">
       <Heading className="ptb-10">My Technical Skills</Heading>

@@ -1,17 +1,11 @@
 import { Box, Flex, Heading, Image } from '@chakra-ui/react';
-import React, { useEffect } from 'react'
+import React from 'react'
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
-import AOS from 'aos';
-import "aos/dist/aos.css"
+
 
 export const Stats = () => {
-useEffect(()=>{
-  AOS.init({
-    // offset:400,
-    duration:5000,
-  });
-},[])
+
   return (
     <div className="p-15" id="stats">
       <Heading className="center ptb-10">GitHub Stats</Heading>

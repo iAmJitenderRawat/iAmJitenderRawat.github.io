@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Box, Button, Flex, Heading, Image, useToast } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, useToast } from "@chakra-ui/react";
 
 export const Contact = () => {
   const form = useRef();
