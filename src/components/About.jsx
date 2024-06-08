@@ -13,13 +13,8 @@ export const About = () => {
         bg={"whiteAlpha.900"}
         className={"br about"}
       >
-        Hello, I'm Jitender Rawat. I am an aspiring Full Stack Web Developer living in
-        Mohali, Punjab. I have done Intermediate from Govt. Model Sr. Sec.
-        School with 62.6% and B.Tech. from Indo Global College of Engineering
-        with 68.5%. Later, I found my interest in coding and started learning
-        coding from various platforms. I have created 10+ projects including
-        both small and big. Now, I want to apply my skills and furnish them more
-        to become better than my previous version.
+        Hello, I'm Jitender Rawat. I am a React Developer living in Mohali,
+        Punjab. I have one year of industry exposure.
       </Text>
     </div>
   );

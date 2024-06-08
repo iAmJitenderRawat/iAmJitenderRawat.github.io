@@ -49,15 +49,15 @@ export const Navbar = () => {
         </TabList>
       </Tabs>
       <a
-        href="https://github.com/iAmJitenderRawat/resume-pdf/blob/main/Jitender_Rawat_Resume.pdf"
+        href="https://github.com/iAmJitenderRawat/resume-pdf/blob/main/Jitender-FlowCV-Resume-20240608.pdf"
         target="_blank"
       >
         <Button leftIcon={<DownloadIcon />} bg={"blue.600"}>
           Resume
         </Button>
       </a>
-      <Button bg={"white"} color={"Background"} onClick={toggleColorMode}>
-        {colorMode === "light" ? <MoonIcon color={"black"} /> : <SunIcon />}
+      <Button bg={"Background"} onClick={toggleColorMode}>
+        {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
       </Button>
     </Flex>
   );

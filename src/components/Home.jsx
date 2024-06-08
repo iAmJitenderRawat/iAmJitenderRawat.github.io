@@ -24,12 +24,12 @@ export const Home = () => {
       flexDir={{ lg: "row", md: "column", sm: "column", base: "column" }}
     >
       <VStack m={5}>
-        <Image className="slide-right"
+        <Image
           src={"https://avatars.githubusercontent.com/u/107478598?v=4"}
           borderRadius={"50%"}
         />
       </VStack>
-      <VStack className="slide-left"
+      <VStack
         align={{
           lg: "flex-start",
           md: "center",
@@ -61,11 +61,12 @@ export const Home = () => {
           <div className="hand">👋</div>
         </Heading>
         <Heading as="h2" size="lg">
-          I'm an aspiring
+          I'm a
           <Typewriter
             options={{
               strings: [
                 "Frontend Developer.",
+                "React Developer.",
                 "Backend Developer.",
                 "Full Stack Web Developer.",
               ],

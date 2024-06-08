@@ -10,17 +10,13 @@ import {
   useColorModeValue,
   Image,
   Button,
-  Grid
+  Grid,
 } from "@chakra-ui/react";
 // import { ReactNode } from "react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { DownloadIcon } from "@chakra-ui/icons";
 
-const SocialButton = ({
-  children,
-  label,
-  href,
-}) => {
+const SocialButton = ({ children, label, href }) => {
   return (
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
@@ -95,15 +91,14 @@ export function Footer() {
           <Stack align={"flex-start"}>
             <ListHeader>Download Resume From Here</ListHeader>
             <a
-              href="https://github.com/iAmJitenderRawat/resume-pdf/raw/main/Jitender_Rawat_Resume.pdf"
+              href="https://github.com/iAmJitenderRawat/resume-pdf/raw/main/Jitender-FlowCV-Resume-20240608.pdf"
               target="_blank"
             >
               <Button
-                bg={useColorModeValue("green.400", "green.400")}
-                color={useColorModeValue("white", "white")}
+                bg={useColorModeValue("green.400", "green.800")}
+                color={useColorModeValue("white", "gray.800")}
                 _hover={{
                   bg: "green.600",
-                  color: "gray.800",
                 }}
                 aria-label="Download"
                 leftIcon={<DownloadIcon />}
