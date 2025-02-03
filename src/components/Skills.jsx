@@ -17,69 +17,69 @@ export const Skills = () => {
         gap={12}
       >
         <GridItem className="skills" data-aos="fade-left">
-          <Image src="../Images/html.svg" />
+          <Image w={20} src="../Images/html.svg" />
           HTML
         </GridItem>
         <GridItem
           className="skills"
           data-aos="fade-right"
         >
-          <Image src="../Images/css.svg" />
+          <Image w={20} src="../Images/css.svg" />
           CSS
         </GridItem>
         <GridItem className="skills" data-aos="fade-left">
-          <Image src="../Images/javascript.svg" />
+          <Image w={20} src="../Images/javascript.svg" />
           JAVASCRIPT
         </GridItem>
         <GridItem
           className="skills"
           data-aos="fade-right"
         >
-          <Image src="../Images/npm.svg" />
+          <Image w={20} src="../Images/npm.svg" />
           NPM
         </GridItem>
         <GridItem className="skills" data-aos="fade-left">
-          <Image src="../Images/redux.svg" />
+          <Image w={20} src="../Images/redux.svg" />
           REDUX-TOOLKIT
         </GridItem>
         <GridItem
           className="skills"
           data-aos="fade-right"
         >
-          <Image src="../Images/git.svg" />
+          <Image w={20} src="../Images/git.svg" />
           GIT
         </GridItem>
         <GridItem className="skills" data-aos="fade-left">
-          <Image src="../Images/algorithm.png" />
+          <Image w={20} src="../Images/algorithm.png" />
           DSA
         </GridItem>
         <GridItem
           className="skills"
           data-aos="fade-right"
         >
-          <Image src="../Images/chakra.png" />
+          <Image w={20} src="../Images/chakra.png" />
           CHAKRA-UI
         </GridItem>
         <GridItem className="skills" data-aos="fade-left">
-          <Image src="../Images/mongodb.svg" />
+          <Image w={20} src="../Images/mongodb.svg" />
           MONGODB
         </GridItem>
         <GridItem
           className="skills"
           data-aos="fade-right"
         >
-          <Image src="../Images/express.svg" />
+          <Image w={20} src="../Images/express.svg" />
           EXPRESS
         </GridItem>
         <GridItem className="skills" data-aos="fade-left">
-          <Image src="../Images/react.svg" />
+          <Image w={20} src="../Images/react.svg" />
           REACT
         </GridItem>
         <GridItem
           className="skills"
           data-aos="fade-right"
         >
-          <Image src="../Images/nodejs.svg" />
+          <Image w={20} src="../Images/nodejs.svg" />
           NODEJS
         </GridItem>
       </Grid>

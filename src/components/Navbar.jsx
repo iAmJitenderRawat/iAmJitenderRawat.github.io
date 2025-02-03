@@ -8,8 +8,9 @@ import {
   Tabs,
   useColorMode,
 } from "@chakra-ui/react";
-import { DownloadIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Sidebar } from "./Sidebar";
+import PdfModal from "./Modal";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -48,14 +49,7 @@ export const Navbar = () => {
           </Tab>
         </TabList>
       </Tabs>
-      <a
-        href="https://github.com/iAmJitenderRawat/resume-pdf/blob/main/Jitender-FlowCV-Resume-20240608.pdf"
-        target="_blank"
-      >
-        <Button leftIcon={<DownloadIcon />} bg={"blue.600"}>
-          Resume
-        </Button>
-      </a>
+      <PdfModal />
       <Button bg={"Background"} onClick={toggleColorMode}>
         {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
       </Button>

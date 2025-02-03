@@ -56,7 +56,7 @@ export const Home = () => {
             display={"inline"}
           >
             {" "}
-            Jitender Rawat
+            Jitender
           </Text>
           <div className="hand">👋</div>
         </Heading>
@@ -68,7 +68,7 @@ export const Home = () => {
                 "Frontend Developer.",
                 "React Developer.",
                 "Backend Developer.",
-                "Full Stack Web Developer.",
+                "MERN Developer.",
               ],
               wrapperClassName: "Typewriter__wrapper",
               autoStart: true,
