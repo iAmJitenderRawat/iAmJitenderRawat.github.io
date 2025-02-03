@@ -12,9 +12,9 @@ import {
   Button,
   Grid,
 } from "@chakra-ui/react";
-// import { ReactNode } from "react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { DownloadIcon } from "@chakra-ui/icons";
+import resume from "../assests/pdf/JitenderResume.pdf";
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -50,6 +50,14 @@ const ListHeader = ({ children }) => {
 
 export function Footer() {
   const year = new Date().getFullYear();
+  const handleClick = () => {
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "jitender-resume.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -90,11 +98,8 @@ export function Footer() {
           </Grid>
           <Stack align={"flex-start"}>
             <ListHeader>Download Resume From Here</ListHeader>
-            <a
-              href="https://github.com/iAmJitenderRawat/resume-pdf/blob/main/Jitender.pdf"
-              target="_blank"
-            >
               <Button
+              onClick={handleClick}
                 bg={useColorModeValue("green.400", "green.800")}
                 color={useColorModeValue("white", "gray.800")}
                 _hover={{
@@ -105,7 +110,6 @@ export function Footer() {
               >
                 Download
               </Button>
-            </a>
           </Stack>
         </SimpleGrid>
       </Container>
