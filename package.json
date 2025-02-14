@@ -21,9 +21,7 @@
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-github-calendar": "^3.4.0",
     "react-icons": "^4.7.1",
-    "react-slick": "^0.30.3",
     "react-tooltip": "^4.5.1",
     "swiper": "^11.2.2",
     "typewriter-effect": "^2.19.0"
@@ -31,7 +29,7 @@
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
-    "@vitejs/plugin-react": "^2.2.0",
-    "vite": "^3.2.3"
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.1.0"
   }
 }

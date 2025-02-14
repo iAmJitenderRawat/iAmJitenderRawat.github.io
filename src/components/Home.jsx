@@ -7,14 +7,42 @@ import {
   List,
   Text,
   Flex,
+  Box,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Typewriter from "typewriter-effect";
+import html from "../../public/Images/html.svg";
+import css from "../../public/Images/css.svg";
+import javascript from "../../public/Images/javascript.svg";
+import react from "../../public/Images/react.svg";
+import npm from "../../public/Images/npm.svg";
+import redux from "../../public/Images/redux.svg";
+import git from "../../public/Images/git.svg";
 
 export const Home = () => {
+  const smallImages=[html,css,javascript,react,redux,npm,git];
+   const [rotation, setRotation] = useState(0);
+   const containerRef = useRef(null);
+
+   useEffect(() => {
+     const intervalId = setInterval(() => {
+       setRotation((prevRotation) => prevRotation + 1); // Adjust rotation speed here
+     }, 50); // Adjust interval for smoother/faster rotation
+
+     return () => clearInterval(intervalId); // Clean up on unmount
+   }, []);
+
+   const calculatePosition = (index) => {
+     const numImages = smallImages.length;
+     const angle = (index / numImages) * 360 + rotation; // Add rotation offset
+     const radius = containerRef.current?.offsetWidth / 2; // Adjust radius as needed
+     const x = radius * Math.cos((angle * Math.PI) / 180);
+     const y = radius * Math.sin((angle * Math.PI) / 180);
+     return { x, y };
+   };
   return (
     <Flex
       id="home"
@@ -24,10 +52,40 @@ export const Home = () => {
       flexDir={{ lg: "row", md: "column", sm: "column", base: "column" }}
     >
       <VStack m={5}>
-        <Image
-          src={"https://avatars.githubusercontent.com/u/107478598?v=4"}
-          borderRadius={"50%"}
-        />
+        <Box w={"400px"} h={"400px"} position={"relative"} ref={containerRef}>
+          <Image
+            src={"https://avatars.githubusercontent.com/u/107478598?v=4"}
+            borderRadius={"50%"}
+            alt="Big Image"
+            w="100%"
+            h="100%"
+            objectFit="cover"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(-50%, -50%)" // Center the big image
+            zIndex={1} // Place big image above small ones
+          />
+          {smallImages.map((smallImage, index) => {
+            const { x, y } = calculatePosition(index);
+            return (
+              <Image
+                key={index}
+                src={smallImage}
+                alt={`Small Image ${index + 1}`}
+                w="50px" // Adjust small image size
+                h="50px"
+                borderRadius="50%"
+                objectFit="fill"
+                position="absolute"
+                top={`calc(50% + ${y}px)`} // Position vertically
+                left={`calc(50% + ${x}px)`} // Position horizontally
+                transform="translate(-50%, -50%)" // Center small images
+                zIndex={2} // Ensure they are above the big image
+              />
+            );
+          })}
+        </Box>
       </VStack>
       <VStack
         align={{

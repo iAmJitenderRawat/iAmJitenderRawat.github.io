@@ -10,8 +10,8 @@ export const About = () => {
       <Text
         fontSize={{ xl: "4xl", lg: "3xl", md: "2xl", sm: "xl", base: "lg" }}
         color={"red.400"}
-        bg={"whiteAlpha.900"}
-        className={"br about"}
+        // bg={"whiteAlpha.900"}
+        className={"br about card"}
       >
         Hello, I'm Jitender Rawat. I am a React Developer living in Mohali,
         Punjab. I have one year of industry exposure.

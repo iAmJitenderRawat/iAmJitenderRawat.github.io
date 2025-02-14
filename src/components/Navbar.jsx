@@ -21,12 +21,13 @@ export const Navbar = () => {
       justify={"space-between"}
       align={"center"}
       p={"10px"}
-      bgGradient="linear(to-r, purple.200, blue.500)"
+      // bgGradient="linear(to-r, purple.200, blue.500)"
+      backdropFilter={"blur(4px)"}
     >
       <Sidebar />
       <Image src="../Images/logoGif.gif" w={"60px"} h={"60px"} p={1} />
       <Tabs
-        variant="unstyled"
+        variant="enclosed"
         display={{ lg: "block", md: "block", sm: "none", base: "none" }}
       >
         <TabList>
@@ -53,7 +54,7 @@ export const Navbar = () => {
       <a href={resume} target={"_blank"}>
         <Button leftIcon={<ViewIcon/>}>Resume</Button>
       </a>
-      <Button bg={"Background"} onClick={toggleColorMode}>
+      <Button onClick={toggleColorMode}>
         {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
       </Button>
     </Flex>
