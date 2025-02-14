@@ -145,22 +145,22 @@ export const Home = () => {
         </List>
         <HStack p={"30px 0"} gap={4}>
           <a href="https://github.com/iAmJitenderRawat" target="_blank">
-            <BsGithub size={"50px"} />
+            <BsGithub size={"50px"} className="link" />
           </a>
           <a
             href="https://www.aedin.com/in/jitender-b38491217/"
             target="_blank"
           >
-            <BsLinkedin size={"50px"} />
+            <BsLinkedin size={"50px"} className="link" />
           </a>
           <a
             href="https://www.hackerrank.com/jitenderrawat39?hr_r=1"
             target="_blank"
           >
-            <FaHackerrank size={"50px"} />
+            <FaHackerrank size={"50px"} className="link" />
           </a>
           <a href="https://leetcode.com/jitenderrawat39/" target="_blank">
-            <SiLeetcode size={"50px"} />
+            <SiLeetcode size={"50px"} className="link" />
           </a>
         </HStack>
       </VStack>
