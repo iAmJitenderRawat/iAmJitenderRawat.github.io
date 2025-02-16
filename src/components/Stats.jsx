@@ -50,7 +50,7 @@ const handlePrev = () => {
                 style={{
                   position: "absolute",
                   width: "100%",
-                  height: "30vh",
+                  height: "400px",
                   zIndex: imageStack.length - idx,
                 }}
               >
@@ -58,7 +58,7 @@ const handlePrev = () => {
                   src={img}
                   alt={`Slide ${idx + 1}`}
                   w="100%"
-                  h="30vh"
+                  h="100%"
                 />
               </motion.div>
             ))}

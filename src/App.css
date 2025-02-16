@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #3498db; /* Example blue */
-    --secondary-color: #e74c3c; /* Example red */
-    --accent-color: #2ecc71; /* Example green */
+  --primary-color: #3498db; /* Example blue */
+  --secondary-color: #e74c3c; /* Example red */
+  --accent-color: #2ecc71; /* Example green */
 }
 * {
   padding: 0;
@@ -24,13 +24,13 @@
 }
 
 @keyframes revolve {
-          0% {
-            transform: rotateY(0deg);
-          }
-          100% {
-            transform: rotateY(360deg);
-          }
-        }
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 
 @keyframes wave {
   0% {
@@ -116,10 +116,10 @@
   transition: transform 1s;
 } */
 
-.link:hover{
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+.link:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .card:hover {
   transform: scale(1.1);
