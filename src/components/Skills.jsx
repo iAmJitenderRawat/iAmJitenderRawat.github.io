@@ -1,13 +1,14 @@
-import { Grid, GridItem, Heading, Image } from '@chakra-ui/react';
-import React from 'react'
+import { Grid, GridItem, Heading, Image } from "@chakra-ui/react";
+import React from "react";
 
 export const Skills = () => {
-
   return (
     <div className="center p-15" id="skills">
-      <Heading as={"h2"} className="ptb-10">
-        <h2>My Technical Skills</h2>
-      </Heading>
+      <h2>
+        <Heading as={"h2"} className="ptb-10">
+          My Technical Skills
+        </Heading>
+      </h2>
       <Grid
         templateColumns={{
           xl: "repeat(4, 1fr)",
@@ -109,4 +110,4 @@ export const Skills = () => {
       </Grid>
     </div>
   );
-}
+};

@@ -3,30 +3,31 @@ import { Box, Flex, Heading, Image, Button, Stack } from "@chakra-ui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-
 export const Stats = () => {
   const images = [
     "https://github-readme-stats.vercel.app/api?username=iamjitenderrawat&show_icons=true&locale=en",
     "https://github-readme-streak-stats.herokuapp.com/?user=iamjitenderrawat",
     "https://github-readme-stats.vercel.app/api/top-langs?username=iamjitenderrawat&show_icons=true&locale=en&layout=compact",
   ];
-const [imageStack, setImageStack] = useState(images);
+  const [imageStack, setImageStack] = useState(images);
 
-const handleNext = () => {
-  setImageStack((prevStack) => [...prevStack.slice(1), prevStack[0]]);
-};
+  const handleNext = () => {
+    setImageStack((prevStack) => [...prevStack.slice(1), prevStack[0]]);
+  };
 
-const handlePrev = () => {
-  setImageStack((prevStack) => [
-    prevStack[prevStack.length - 1],
-    ...prevStack.slice(0, -1),
-  ]);
-};
+  const handlePrev = () => {
+    setImageStack((prevStack) => [
+      prevStack[prevStack.length - 1],
+      ...prevStack.slice(0, -1),
+    ]);
+  };
   return (
     <div id="stats">
-      <Heading as={"h2"} className="center ptb-10">
-        <h2>GitHub Stats</h2>
-      </Heading>
+      <h2>
+        <Heading as={"h2"} className="center ptb-10">
+          GitHub Stats
+        </Heading>
+      </h2>
       <Flex direction="column" align="center" justify="center">
         <Box position="relative" w="400px" h="400px">
           <AnimatePresence>

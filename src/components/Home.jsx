@@ -23,26 +23,26 @@ import redux from "../../public/Images/redux.svg";
 import git from "../../public/Images/git.svg";
 
 export const Home = () => {
-  const smallImages=[html,css,javascript,react,redux,npm,git];
-   const [rotation, setRotation] = useState(0);
-   const containerRef = useRef(null);
+  const smallImages = [html, css, javascript, react, redux, npm, git];
+  const [rotation, setRotation] = useState(0);
+  const containerRef = useRef(null);
 
-   useEffect(() => {
-     const intervalId = setInterval(() => {
-       setRotation((prevRotation) => prevRotation + 1); // Adjust rotation speed here
-     }, 50); // Adjust interval for smoother/faster rotation
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setRotation((prevRotation) => prevRotation + 1); // Adjust rotation speed here
+    }, 50); // Adjust interval for smoother/faster rotation
 
-     return () => clearInterval(intervalId); // Clean up on unmount
-   }, []);
+    return () => clearInterval(intervalId); // Clean up on unmount
+  }, []);
 
-   const calculatePosition = (index) => {
-     const numImages = smallImages.length;
-     const angle = (index / numImages) * 360 + rotation; // Add rotation offset
-     const radius = containerRef.current?.offsetWidth / 2; // Adjust radius as needed
-     const x = radius * Math.cos((angle * Math.PI) / 180);
-     const y = radius * Math.sin((angle * Math.PI) / 180);
-     return { x, y };
-   };
+  const calculatePosition = (index) => {
+    const numImages = smallImages.length;
+    const angle = (index / numImages) * 360 + rotation; // Add rotation offset
+    const radius = containerRef.current?.offsetWidth / 2; // Adjust radius as needed
+    const x = radius * Math.cos((angle * Math.PI) / 180);
+    const y = radius * Math.sin((angle * Math.PI) / 180);
+    return { x, y };
+  };
   return (
     <Flex
       id="home"
@@ -98,18 +98,18 @@ export const Home = () => {
         }}
         m={5}
       >
-        <Heading
-          as="h1"
-          fontSize={{
-            "2xl": "7xl",
-            xl: "6xl",
-            lg: "5xl",
-            md: "4xl",
-            sm: "3xl",
-            base: "2xl",
-          }}
-        >
-          <h1>
+        <h1>
+          <Heading
+            as="h1"
+            fontSize={{
+              "2xl": "7xl",
+              xl: "6xl",
+              lg: "5xl",
+              md: "4xl",
+              sm: "3xl",
+              base: "2xl",
+            }}
+          >
             Hi, I'm
             <Text
               bgGradient="linear(to-r, purple.200, blue.500)"
@@ -120,8 +120,8 @@ export const Home = () => {
               Jitender
             </Text>
             <div className="hand">👋</div>
-          </h1>
-        </Heading>
+          </Heading>
+        </h1>
         <Heading as="h2" size="lg">
           I'm a
           <Typewriter

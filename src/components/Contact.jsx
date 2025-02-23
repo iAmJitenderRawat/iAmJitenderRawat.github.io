@@ -4,7 +4,7 @@ import { Box, Button, Flex, Heading, Image, useToast } from "@chakra-ui/react";
 
 export const Contact = () => {
   const form = useRef();
-  const [loading, setLoading]=useState(false);
+  const [loading, setLoading] = useState(false);
   const toast = useToast();
 
   const sendEmail = (e) => {
@@ -18,7 +18,7 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((res) => setLoading(false))
-      .catch((err) => console.log('err', err));
+      .catch((err) => console.log("err", err));
     toast({
       title: "Mail Sent!",
       description: "Thanks for contacting me. I will get back to you soon.",
@@ -31,9 +31,9 @@ export const Contact = () => {
 
   return (
     <Box className="center ptb-10" id="contact">
-      <Heading as={"h2"}>
-        <h2>Contact Me</h2>
-      </Heading>
+      <h2>
+        <Heading as={"h2"}>Contact Me</Heading>
+      </h2>
       <Flex
         flexDir={{
           xl: "row",
