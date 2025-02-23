@@ -22,7 +22,9 @@ export const Projects = () => {
 
   return (
     <Box px={{ md: "15%", sm: "10%", base: 5 }} id="projects">
-      <Heading as={"h2"} className="center ptb-10">Project Section</Heading>
+      <Heading as={"h2"} className="center ptb-10">
+        <h2>Project Section</h2>
+      </Heading>
       <Grid
         templateColumns={{
           xl: "repeat(2, 1fr)",

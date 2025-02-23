@@ -31,7 +31,9 @@ export const Contact = () => {
 
   return (
     <Box className="center ptb-10" id="contact">
-      <Heading as={"h2"}>Contact</Heading>
+      <Heading as={"h2"}>
+        <h2>Contact Me</h2>
+      </Heading>
       <Flex
         flexDir={{
           xl: "row",
@@ -45,7 +47,12 @@ export const Contact = () => {
           w={{ xl: "40%", lg: "45%", md: "85%", sm: "95%", base: "98%" }}
           m={"auto"}
         >
-          <Image src="../Images/contact.png" m={"auto"} alt="contact" loading={"lazy"} />
+          <Image
+            src="../Images/contact.png"
+            m={"auto"}
+            alt="contact"
+            loading={"lazy"}
+          />
         </Box>
         <Box
           id="form"
@@ -59,7 +66,9 @@ export const Contact = () => {
             <input type="email" name="email" required />
             <label>Message</label>
             <textarea type="text" name="message" rows={3} required />
-            <Button type="submit" isLoading={loading} loadingText="Sending...">Send</Button>
+            <Button type="submit" isLoading={loading} loadingText="Sending...">
+              Send
+            </Button>
           </form>
         </Box>
       </Flex>

@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <div className="p-15" id="about">
       <Heading as={"h2"} fontSize={"4xl"} className="center ptb-10">
-        About Me
+        <h2>About Me</h2>
       </Heading>
       <Text
         fontSize={{ xl: "4xl", lg: "3xl", md: "2xl", sm: "xl", base: "lg" }}

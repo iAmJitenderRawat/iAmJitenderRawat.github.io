@@ -109,16 +109,18 @@ export const Home = () => {
             base: "2xl",
           }}
         >
-          Hi, I'm
-          <Text
-            bgGradient="linear(to-r, purple.200, blue.500)"
-            bgClip="text"
-            display={"inline"}
-          >
-            {" "}
-            Jitender
-          </Text>
-          <div className="hand">👋</div>
+          <h1>
+            Hi, I'm
+            <Text
+              bgGradient="linear(to-r, purple.200, blue.500)"
+              bgClip="text"
+              display={"inline"}
+            >
+              {" "}
+              Jitender
+            </Text>
+            <div className="hand">👋</div>
+          </h1>
         </Heading>
         <Heading as="h2" size="lg">
           I'm a

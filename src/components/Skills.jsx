@@ -5,7 +5,9 @@ export const Skills = () => {
 
   return (
     <div className="center p-15" id="skills">
-      <Heading as={"h2"} className="ptb-10">My Technical Skills</Heading>
+      <Heading as={"h2"} className="ptb-10">
+        <h2>My Technical Skills</h2>
+      </Heading>
       <Grid
         templateColumns={{
           xl: "repeat(4, 1fr)",

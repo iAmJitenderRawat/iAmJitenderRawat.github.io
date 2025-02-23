@@ -24,7 +24,9 @@ const handlePrev = () => {
 };
   return (
     <div id="stats">
-      <Heading as={"h2"} className="center ptb-10">GitHub Stats</Heading>
+      <Heading as={"h2"} className="center ptb-10">
+        <h2>GitHub Stats</h2>
+      </Heading>
       <Flex direction="column" align="center" justify="center">
         <Box position="relative" w="400px" h="400px">
           <AnimatePresence>

@@ -69,7 +69,14 @@ export function Footer() {
           spacing={8}
         >
           <Box>
-            <Image src="../Images/logoGif.gif" alt="logo" w={"50%"} loading={"lazy"} />
+            <Link href="#home">
+              <Image
+                src="../Images/logoGif.gif"
+                alt="logo"
+                w={"50%"}
+                loading={"lazy"}
+              />
+            </Link>
             <Text>Designed and Developed</Text>
             <Text>by Jitender Rawat</Text>
           </Box>
