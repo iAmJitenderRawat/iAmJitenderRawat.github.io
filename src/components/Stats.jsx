@@ -24,12 +24,8 @@ const handlePrev = () => {
 };
   return (
     <div id="stats">
-      <Heading className="center ptb-10">GitHub Stats</Heading>
-      <Flex
-        direction="column"
-        align="center"
-        justify="center"
-      >
+      <Heading as={"h2"} className="center ptb-10">GitHub Stats</Heading>
+      <Flex direction="column" align="center" justify="center">
         <Box position="relative" w="400px" h="400px">
           <AnimatePresence>
             {imageStack.map((img, idx) => (
@@ -56,7 +52,8 @@ const handlePrev = () => {
               >
                 <Image
                   src={img}
-                  alt={`Slide ${idx + 1}`}
+                  alt={`Github Stat Slide ${idx + 1}`}
+                  loading={"lazy"}
                   w="100%"
                   h="100%"
                 />

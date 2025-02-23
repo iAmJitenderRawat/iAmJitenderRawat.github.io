@@ -56,7 +56,8 @@ export const Home = () => {
           <Image
             src={"https://avatars.githubusercontent.com/u/107478598?v=4"}
             borderRadius={"50%"}
-            alt="Big Image"
+            loading={"lazy"}
+            alt="Jitender-React Developer"
             w="100%"
             h="100%"
             objectFit="cover"
@@ -72,9 +73,10 @@ export const Home = () => {
               <Image
                 key={index}
                 src={smallImage}
-                alt={`Small Image ${index + 1}`}
+                alt={smallImage}
                 w="50px" // Adjust small image size
                 h="50px"
+                loading={"lazy"}
                 borderRadius="50%"
                 objectFit="fill"
                 position="absolute"

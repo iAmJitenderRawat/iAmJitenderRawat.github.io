@@ -4,7 +4,7 @@ import React from "react";
 export const About = () => {
   return (
     <div className="p-15" id="about">
-      <Heading as={"h1"} fontSize={"4xl"} className="center ptb-10">
+      <Heading as={"h2"} fontSize={"4xl"} className="center ptb-10">
         About Me
       </Heading>
       <Text

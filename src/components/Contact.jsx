@@ -31,7 +31,7 @@ export const Contact = () => {
 
   return (
     <Box className="center ptb-10" id="contact">
-      <Heading>Contact</Heading>
+      <Heading as={"h2"}>Contact</Heading>
       <Flex
         flexDir={{
           xl: "row",
@@ -45,7 +45,7 @@ export const Contact = () => {
           w={{ xl: "40%", lg: "45%", md: "85%", sm: "95%", base: "98%" }}
           m={"auto"}
         >
-          <Image src="../Images/contact.png" m={"auto"} />
+          <Image src="../Images/contact.png" m={"auto"} alt="contact" loading={"lazy"} />
         </Box>
         <Box
           id="form"

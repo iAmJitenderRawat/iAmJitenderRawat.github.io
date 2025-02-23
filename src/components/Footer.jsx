@@ -69,7 +69,7 @@ export function Footer() {
           spacing={8}
         >
           <Box>
-            <Image src="../Images/logoGif.gif" w={"50%"} />
+            <Image src="../Images/logoGif.gif" alt="logo" w={"50%"} loading={"lazy"} />
             <Text>Designed and Developed</Text>
             <Text>by Jitender Rawat</Text>
           </Box>
@@ -98,18 +98,18 @@ export function Footer() {
           </Grid>
           <Stack align={"flex-start"}>
             <ListHeader>Download Resume From Here</ListHeader>
-              <Button
+            <Button
               onClick={handleClick}
-                bg={useColorModeValue("green.400", "green.800")}
-                color={useColorModeValue("white", "gray.800")}
-                _hover={{
-                  bg: "green.600",
-                }}
-                aria-label="Download"
-                leftIcon={<DownloadIcon />}
-              >
-                Download
-              </Button>
+              bg={useColorModeValue("green.400", "green.800")}
+              color={useColorModeValue("white", "gray.800")}
+              _hover={{
+                bg: "green.600",
+              }}
+              aria-label="Download"
+              leftIcon={<DownloadIcon />}
+            >
+              Download
+            </Button>
           </Stack>
         </SimpleGrid>
       </Container>

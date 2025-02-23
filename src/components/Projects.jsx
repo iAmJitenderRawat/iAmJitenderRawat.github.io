@@ -22,7 +22,7 @@ export const Projects = () => {
 
   return (
     <Box px={{ md: "15%", sm: "10%", base: 5 }} id="projects">
-      <Heading className="center ptb-10">Project Section</Heading>
+      <Heading as={"h2"} className="center ptb-10">Project Section</Heading>
       <Grid
         templateColumns={{
           xl: "repeat(2, 1fr)",
@@ -43,6 +43,7 @@ export const Projects = () => {
                       <Image
                         src={`../Images/${project.src}`}
                         alt={project.name}
+                        loading={"lazy"}
                       />
                     </Skeleton>
                   </Box>

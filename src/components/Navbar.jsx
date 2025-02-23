@@ -25,7 +25,14 @@ export const Navbar = () => {
       backdropFilter={"blur(4px)"}
     >
       <Sidebar />
-      <Image src="../Images/logoGif.gif" w={"60px"} h={"60px"} p={1} />
+      <Image
+        src="../Images/logoGif.gif"
+        alt="logo"
+        loading={"lazy"}
+        w={"60px"}
+        h={"60px"}
+        p={1}
+      />
       <Tabs
         variant="enclosed"
         display={{ lg: "block", md: "block", sm: "none", base: "none" }}
@@ -52,7 +59,7 @@ export const Navbar = () => {
         </TabList>
       </Tabs>
       <a href={resume} target={"_blank"}>
-        <Button leftIcon={<ViewIcon/>}>Resume</Button>
+        <Button leftIcon={<ViewIcon />}>Resume</Button>
       </a>
       <Button onClick={toggleColorMode}>
         {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
